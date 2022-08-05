@@ -9,6 +9,7 @@ public class Main {
         // Create JFrame
         JFrame myFrame = new JFrame();
         myFrame.setSize(512, 256);
+        myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         myFrame.setLayout(null);
 
         // Create JTextField
