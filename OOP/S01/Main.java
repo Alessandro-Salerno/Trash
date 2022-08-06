@@ -5,6 +5,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        // Using Anonymous class with Abstract Class
+        // CAN override methods
+        // CAN also inherit from abstract class
         Main.fullTest(new AbstractTest() {
             @Override
             public void test() {
@@ -12,6 +15,10 @@ public class Main {
             }
         });
 
+        // Using Anonymous class with interface
+        // MUST implement all methods (No default implementation provided)
+        // NO inheritance
+        // Can be used as lambda functions if there's only one method
         Main.fullTest(new InterfaceTest() {
             @Override
             public void test() {
